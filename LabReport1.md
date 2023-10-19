@@ -3,14 +3,14 @@
 ## `cd` Command
 ## _Command with no arguments:_
 ```
-[user@sahara ~]$ cd
+[user@sahara ~/lecture1/messages]$ cd
 [user@sahara ~]$
 ```
 - What was the working directory when the command was run?
   > `/home` was the working directory.
 
 - Why this output?
-  > Since no argument was passed into the `ls` command, the current directory did not change at all and nothing happened.
+  > When no argument was passed into the `cd` command, the current directory changed back to the home directory.
 
 - Was this an error?
   > This was not an error.
