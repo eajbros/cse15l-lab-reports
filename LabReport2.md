@@ -40,5 +40,5 @@
 ![Terminal Interaction No Password 2](NoPass2.png)
 ---
 ## Part 3
-In these past labs, I have learned how to remotely access a computer using the `ssh` command. This allows me to access the files on a computer without physically being there. This action requires a password unless a key is set up from a remote device, which I have also learned how to do in these past labs.
+> In these past labs, I have learned how to remotely access a computer using the `ssh` command. This allows me to access the files on a computer without physically being there. This action requires a password unless a key is set up from a remote device, which I have also learned how to do in these past labs.
 
