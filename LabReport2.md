@@ -14,9 +14,10 @@
   > The argument to this method is `http://localhost:4000/add-message?s=Hello%20World` and is assigned to the URI value `url`, other values of the fields in this class are `""` for the String `str` and `0` for the int `requests`.
 
 - How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
-  > When this method sees the `/add-message` path, it increments the value of `requests` by one, making its new value `1`. This method also updates the value of `str` to the request number, the string inside the query, and a new line. This makes the new value for str `"1. Hello World \n"`. `url` is not changed at all and is only used to check what if statements should be run with its path and to pass a query into the values in the method.
+  > When this method sees the `/add-message` path, it increments the value of `requests` by one, making its new value `1`. This method also updates the value of   `str` to the request number, the string inside the query, and a new line. This makes the new value for str `"1. Hello World \n"`. `url` is not changed at all and is only used to check what if statements should be run with its path and to pass a query into the values in the method.
 
 ---
+
 ## `/add-message` Example Two
 ![*Add Hello World Server*](AddXylophone.png)
 - Which methods in your code are called?
