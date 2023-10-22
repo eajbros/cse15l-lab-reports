@@ -28,4 +28,9 @@
   > When this method sees the `/add-message` path, it increments the value of `requests` by one, making its new value `4`. This method also updates the value of `str` to add the request number, the string inside the query, and a new line. This makes the new value for str `"1. Hello World \n 2. I am Ethan \n 3. Third String \n 4. Xylophone"`.
 ---
 ## Part 2
+## Path to the private key for my SSH key for logging into ieng6
+## Path to the public key for my SSH key for logging into ieng6
+## A terminal interaction logged into ieng6 without being asked for a password
+![Terminal Interaction No Password 1](NoPass1.png)
+![Terminal Interaction No Password 2](NoPass2.png)
 
