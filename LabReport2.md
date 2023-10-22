@@ -29,7 +29,9 @@
 ---
 ## Part 2
 ## Path to the private key for my SSH key for logging into ieng6
+![Private Key Screenshot](PrivateKey.png)
 ## Path to the public key for my SSH key for logging into ieng6
+![Public Key Screenshot](PublicKey.png)
 ## A terminal interaction logged into ieng6 without being asked for a password
 ![Terminal Interaction No Password 1](NoPass1.png)
 ![Terminal Interaction No Password 2](NoPass2.png)
