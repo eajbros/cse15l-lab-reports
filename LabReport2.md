@@ -27,6 +27,7 @@
 
 - How do the values of any relevant fields of the class change from this specific request? If no values got changed, explain why.
   > When this method sees the `/add-message` path, it increments the value of `requests` by one, making its new value `4`. This method also updates the value of `str` to add the request number, the string inside the query, and a new line. This makes the new value for str `"1. Hello World \n 2. I am Ethan \n 3. Third String \n 4. Xylophone"`. `url` is not changed at all and is only used to check what if statements should be run with its path and to pass a query into the values in the method.
+  
 ---
 ## Part 2
 ## Path to the private key for my SSH key for logging into ieng6
