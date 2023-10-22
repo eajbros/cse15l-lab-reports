@@ -2,7 +2,7 @@
 ---
 ## Part One
 ## `StringServer.java` code
-<img src="StringServerSS.png" width="700" height="700">
+<img src="StringServerSS.png" width="600" height="600">
 ---
 ## `/add-message` Example one
 ![*Add Hello World Server*](AddHelloWorld.png)
