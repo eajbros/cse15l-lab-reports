@@ -33,3 +33,6 @@ public class ArrayExamples {
    double[] input = {1.5, 2.0, 4.5, 8.5};
    assertEquals(5.0, ArrayExamples.averageWithoutLowest(input), 0.00001);
  }
+```
+## Symptom
+![symptom](Screenshot 2023-10-30 133755.png)
