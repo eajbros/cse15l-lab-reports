@@ -35,4 +35,28 @@ public class ArrayExamples {
  }
 ```
 ## Symptom
-![symptom](Screenshot 2023-10-30 133755.png)
+![symptom](SymptomAverage.png)
+## The fix of the bug
+```java
+public class ArrayExamples {
+  static double averageWithoutLowest(double[] arr) {
+    if(arr.length < 2) { return 0.0; }
+    double lowest = arr[0];
+    for(double num: arr) {
+      if(num < lowest) { lowest = num; }
+    }
+    double sum = 0;
+    for(double num: arr) {
+      if(num != lowest) { sum += num; }
+    }
+    return sum / (arr.length - 1);
+  }
+}
+```
+```java
+public class ArrayExamples {
+  static double averageWithoutLowest(double[] arr) {
+
+  }
+}
+```
