@@ -162,3 +162,39 @@ etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/techn
 ```
 This option with a file searches every line in the file returning the string "analysis" ignoring case sensitivity. This helps us not leave out versions of the word we are searching for that are captialized.
 #### Source: https://linuxopsys.com/topics/grep-command-in-linux
+
+## `-w` option
+### Directory:
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -w mNoc biomed/
+biomed/1471-213X-1-9.txt:        mNoc ) parallels the pattern seen for
+biomed/1471-213X-1-9.txt:          mNoc ) along with partial coding
+biomed/1471-213X-1-9.txt:          mNoc mRNA expression. We used
+biomed/1471-213X-1-9.txt:          mNoc 3' UTR or from exon II, we
+                  --- A lot of lines ---
+biomed/1471-213X-1-9.txt:          mNoc clones were custom sequenced
+biomed/1471-213X-1-9.txt:          mNoc bacterial artifical chromosome
+biomed/1471-213X-1-9.txt:          mNoc were generated using a
+biomed/1471-213X-1-9.txt:          mNoc cDNA, forward) and
+biomed/1471-213X-1-9.txt:          mNoc ), AF199492 (
+```
+This option with a directory searches every line in every file for exactly what word is passed without anything before or after but a space. This allows us to narrow our search to a more specific result.
+#### Source: https://linuxopsys.com/topics/grep-command-in-linux
+
+### File:
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -w weight biomed/1468-6708-3-1.txt
+        Older adults are frequently counseled to lose weight,
+        Many healthy older adults report gradual weight gain
+        gradual weight gain is normative and associated with the
+        weight standards be adjusted upwards for age [ 8 ] . Such
+        trials of weight modification might be more successful if
+                    --- A lot of lines ---
+          underlying conditions that caused the low weight) could
+          be more sensitive to change in weight than EVGFP. If YHL
+          differences between the overweight and normal weight
+        Recommendations for desirable weight have been
+        determine desirable weight guidelines should include
+```
+This option with a file searches every line in a file for exactly what word is passed without anything before or after but a space. This allows us to narrow our search to a more specific result.
+#### Source: https://linuxopsys.com/topics/grep-command-in-linux
