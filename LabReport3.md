@@ -74,10 +74,10 @@ public class ArrayExamples {
 ```
 This fix stores the index of the lowest value instead of the value itself. This allows the program to only remove the one lowest number it picks instead of every number that has that same value.
 ## Part Two - `grep` research
-## `\|` option
+## `-e` option
 ### Directory:
-```
-etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r 'inseminate\|ultrastructural' biomed
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -e inseminate -e ultrastructural biomed
 biomed/1471-2121-2-10.txt:          We have performed ultrastructural analysis by SEM of
 biomed/1471-2121-2-10.txt:          ultrastructural features of the cytoskeleton,
 biomed/1471-2121-2-22.txt:        ultrastructural immunogold labeling techniques especially
@@ -85,11 +85,12 @@ biomed/1471-2121-2-22.txt:        ultrastructural immunogold labeling techniques
 biomed/1472-6793-2-17.txt:          thin filaments and had many of the ultrastructural
 biomed/1472-6793-2-17.txt:          The overall ultrastructural organization of the
 ```
-This option used with a directory searches through every line in every file in the directory returning lines that either have the string inseminate OR ultrastructural. This is useful because it allows us to search for multiple strings in just one command line.
+This option used with a directory searches through every line in every file in the directory returning lines that either have the string "inseminate" OR "ultrastructural". This is useful because it allows us to search for multiple strings in just one command line.
+#### Source: https://linuxopsys.com/topics/grep-command-in-linux
 
 ### File:
-```
-etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep "interventions\|clinical" biomed/1468-6708-3-1.txt
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -e interventions -e clinical biomed/1468-6708-3-1.txt
         whom risk factors, subclinical disease, and morbidity are
         modification interventions in older adults.
         significantly greater than zero. A clinical trial of a
@@ -101,4 +102,63 @@ etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/techn
           outcome measure. Both YOL and YHL would be clinically
         YHL as the outcome measure in clinical trials involving
 ```
-This option used with a file searches through every line a file returning lines that either have the string interventions OR clinical. This is useful because it allows us to search for multiple strings in just one command line.
+This option used with a file searches through every line a file returning lines that either have the string "interventions" OR "clinical". This is useful because it allows us to search for multiple strings in just one command line.
+#### Source: https://linuxopsys.com/topics/grep-command-in-linux
+
+## `-c` option
+### Directory:
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -c "clinical" biomed/
+biomed/1468-6708-3-1.txt:5
+biomed/1468-6708-3-10.txt:12
+biomed/1468-6708-3-3.txt:12
+biomed/1468-6708-3-4.txt:12
+biomed/1468-6708-3-7.txt:6
+biomed/1471-2091-2-10.txt:0
+  --- A lot of lines ---
+biomed/rr37.txt:6
+biomed/rr73.txt:0
+biomed/rr74.txt:0
+```
+This option used with a directory returns the number of lines with the string "clinical" for every file in the directory. This can be useful in seeing which files uses a specific word the most or least.
+#### Source: https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+### File:
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -c "clinical" biomed/1468-6708-3-1.txt
+5
+```
+This option used with a file returns the number of lines that have the string "clinical" in it. This allows us to count the number of lines a string appears in a file.
+#### Source: https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
+
+## `-c` option
+### Directory:
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -i nocturnin biomed/
+biomed/1471-2105-3-37.txt:          5'-polyphosphate phosphatase, Nocturnin, CCR4, cytolethal
+biomed/1471-213X-1-9.txt:        nocturnin gene was discovered in a
+biomed/1471-213X-1-9.txt:        domain in yeast CCR4 and NOCTURNIN [ 36]. CCR4 is thought
+biomed/1471-213X-1-9.txt:        nocturnin was found to exhibit high
+biomed/1471-213X-1-9.txt:        nocturnin gene appears to encode a
+                        --- A lot of lines ---
+biomed/1471-2164-2-9.txt:          Characterization of d.nocturnin and dCCR4 cDNAs was
+biomed/1471-2164-2-9.txt:          d.nocturnin:5'-CCGATGGATATTGGAAGCTGGG-3',
+biomed/1471-2164-2-9.txt:          both vector and insert. To generate pGa14-m.nocturnin, a
+biomed/1471-2164-2-9.txt:          m.nocturnin cDNA [ 21 ]
+```
+This option with a directory searches every line in every file returning the string "nocturnin" ignoring case sensitivity. This helps us not leave out versions of the word we are searching for that are captialized.
+#### Source: https://linuxopsys.com/topics/grep-command-in-linux
+
+### File:
+```bash
+etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -i analysis biomed/1468-6708-3-1.txt
+          For this analysis we defined YHL as the number of
+          primary analysis we used observed 7-year YOL and YHL when
+          this analysis is based.
+          Analysis
+          intervals or analysis of variance. Finally we calculated
+          group were similar. Analysis of mean YOL instead of the
+          more traditional survival analysis survival analysis was
+        present in the mortality analysis, suggesting that YHL may
+```
+This option with a file searches every line in the file returning the string "analysis" ignoring case sensitivity. This helps us not leave out versions of the word we are searching for that are captialized.
+#### Source: https://linuxopsys.com/topics/grep-command-in-linux
