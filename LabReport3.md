@@ -76,7 +76,7 @@ This fix stores the index of the lowest value instead of the value itself. This 
 ## Part Two - `grep` research
 ## `-e` option
 ### Directory:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -e inseminate -e ultrastructural biomed
 biomed/1471-2121-2-10.txt:          We have performed ultrastructural analysis by SEM of
 biomed/1471-2121-2-10.txt:          ultrastructural features of the cytoskeleton,
@@ -89,7 +89,7 @@ This option used with a directory searches through every line in every file in t
 #### Source: https://linuxopsys.com/topics/grep-command-in-linux
 
 ### File:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -e interventions -e clinical biomed/1468-6708-3-1.txt
         whom risk factors, subclinical disease, and morbidity are
         modification interventions in older adults.
@@ -107,7 +107,7 @@ This option used with a file searches through every line a file returning lines 
 
 ## `-c` option
 ### Directory:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -c "clinical" biomed/
 biomed/1468-6708-3-1.txt:5
 biomed/1468-6708-3-10.txt:12
@@ -123,7 +123,7 @@ biomed/rr74.txt:0
 This option used with a directory returns the number of lines with the string "clinical" for every file in the directory. This can be useful in seeing which files uses a specific word the most or least.
 #### Source: https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
 ### File:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -c "clinical" biomed/1468-6708-3-1.txt
 5
 ```
@@ -132,7 +132,7 @@ This option used with a file returns the number of lines that have the string "c
 
 ## `-i` option
 ### Directory:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -i nocturnin biomed/
 biomed/1471-2105-3-37.txt:          5'-polyphosphate phosphatase, Nocturnin, CCR4, cytolethal
 biomed/1471-213X-1-9.txt:        nocturnin gene was discovered in a
@@ -149,7 +149,7 @@ This option with a directory searches every line in every file returning the str
 #### Source: https://linuxopsys.com/topics/grep-command-in-linux
 
 ### File:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -i analysis biomed/1468-6708-3-1.txt
           For this analysis we defined YHL as the number of
           primary analysis we used observed 7-year YOL and YHL when
@@ -165,7 +165,7 @@ This option with a file searches every line in the file returning the string "an
 
 ## `-w` option
 ### Directory:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -w mNoc biomed/
 biomed/1471-213X-1-9.txt:        mNoc ) parallels the pattern seen for
 biomed/1471-213X-1-9.txt:          mNoc ) along with partial coding
@@ -182,7 +182,7 @@ This option with a directory searches every line in every file for exactly what 
 #### Source: https://linuxopsys.com/topics/grep-command-in-linux
 
 ### File:
-```bash
+```
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -w weight biomed/1468-6708-3-1.txt
         Older adults are frequently counseled to lose weight,
         Many healthy older adults report gradual weight gain
