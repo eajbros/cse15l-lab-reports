@@ -130,7 +130,7 @@ etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/techn
 This option used with a file returns the number of lines that have the string "clinical" in it. This allows us to count the number of lines a string appears in a file.
 #### Source: https://www.cyberciti.biz/faq/howto-use-grep-command-in-linux-unix/
 
-## `-c` option
+## `-i` option
 ### Directory:
 ```bash
 etjenkins@ETHANLAPTOP:/mnt/c/Users/eajcu/Documents/VS Code Files/docsearch/technical$ grep -r -i nocturnin biomed/
