@@ -54,4 +54,11 @@ Description: I added the `ListExamples.java` file to the staging area by typing 
 ![Commited](successfulCommit.png)
 
 Keys Pressed: `i` `Fixed Errors :)` `<esc>` `:` `w` `q` `<enter>`
+
 Description: I entered insert mode by typing `i` and added the message `Fixed Errors :)` and saved by entering normal mode with `<esc>` and typed `:wq`.
+
+![Pushed](GitPush.png)
+
+Keys Pressed: `g` `i` `t` `<space>` `p` `u` `s` `h` `<enter>`
+
+Description: I pushed everything that was staged to my github account by typing `git push`.
