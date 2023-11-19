@@ -30,8 +30,28 @@ Keys Pressed: `v` `i` `m` `<space>` `<shift>` `l` `<tab>` `.` `<tab>` `<enter>`
 
 Description: To open vim i typed `vim L` and used tab to autocomplete most of the command. It didn't comlete the whole file because both `ListExamples.java` and `ListExamplesTests.java` can be opened with vim. I added a `.` to show I wanted to access `ListExamples.java` and then completed the command with `tab`.
 
-![Change index](inVim.png)
+![Change index](FixIndex.png)
 
 Keys Pressed: `4` `4` `<shift>` `g` `e` `c` `w` `2` `<esc>` `:` `w` `q` `<enter>`
 
 Description: To get to the line with the error I used `44G` to get to the 44th line. Then I used `e` to get to the end of the word where the error was. The I used `cw` to delete the character I was on and to enter insert mode. I typed `2` to fix the error and saved my work by entering normal mode with `<esc>` and typing `:wq`.
+
+## Step 8: Run the tests, demonstrating that they now succeed
+![Successful Tests](RerunTests.png)
+
+Keys Pressed: `<up>` `<up>` `<enter>`
+
+Description: To rerun the tests I accessed the command by going back up two times into my history to run the same command again and pressed enter.
+
+## Step 9: Commit and push the resulting change to your Github account
+![Type commit](commitListExamples.png)
+
+Keys Pressed: `g` `i` `t` `<space>` `a` `d` `d` `<space>` `<shift>` `l` `<tab>` `<enter>` `g` `i` `t` `<space>` `c` `o` `m` `<tab>` `<enter>`
+
+Description: I added the `ListExamples.java` file to the staging area by typing `git add L` and autocompleting it with `<tab>`. I then commited by typing `git com` and autocompleted it with `<tab>`.
+
+![Add message](addMessage.png)
+![Commited](successfulCommit.png)
+
+Keys Pressed: `i` `Fixed Errors :)` `<esc>` `:` `w` `q` `<enter>`
+Description: I entered insert mode by typing `i` and added the message `Fixed Errors :)` and saved by entering normal mode with `<esc>` and typed `:wq`.
