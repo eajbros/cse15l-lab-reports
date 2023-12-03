@@ -27,9 +27,14 @@ would continue when the needed file didn't exist. Thank you for the help!
 ```
 ## Information about setup:
 ### File and directory structure of grading script:
-For the grading script structure, you need the grading script, and the tests to run on ListExamples.java
-![Grading Structure](GradingStructure)
-### Contents of Grade.sh:
-![Grade.sh](GradingScript)
+For the grading script structure, you need the lib folder for JUnit, the grading script, and the tests to run on ListExamples.java
+
+![Grading Structure](GradingStructure.png)
+### Contents of Grade.sh (with bug):
+Runs a ListExamples files methods (filter and merge), if the file exists and compiles. Outputs the results of the tests in a .txt file.
+
+![Grade.sh](GradingScript.png)
 ### Contents of TestListExamples.java:
-![Test List Examples](ListTester)
+Has two methods that test each of the methods in ListExamples with JUnit.
+
+![Test List Examples](ListTester.png)
