@@ -42,6 +42,10 @@ Has two methods that test each of the methods in ListExamples with JUnit.
 All that is needed in the repository structure is the ListExamples.java file with implamentation of the filter and merge methods. Contents of ListExamples:
 
 ![List Example](ListExample.png)
-### Command lines ran to trigger bug and their output:
+### Command lines ran to trigger bug and its output:
 
 ![Commands Run](CommandError.png)
+### Bug Fixed:
+Adding an `!` at the if statement makes sure that the program only exits if the file does not exist, not if it does.
+
+![Fixed Bug](FixedBug.png)
