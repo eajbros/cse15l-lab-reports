@@ -39,6 +39,9 @@ Has two methods that test each of the methods in ListExamples with JUnit.
 
 ![Test List Examples](ListTester.png)
 ### Input Repository:
-All that is needed in the repository structure is the ListExamples.java file with implamentation of the filter and merge methods.
+All that is needed in the repository structure is the ListExamples.java file with implamentation of the filter and merge methods. Contents of ListExamples:
 
-![List Example](ListExample.java)
+![List Example](ListExample.png)
+### Command lines ran to trigger bug and their output:
+
+![Commands Run](CommandError.png)
