@@ -49,3 +49,8 @@ All that is needed in the repository structure is the ListExamples.java file wit
 Adding an `!` at the if statement makes sure that the program only exits if the file does not exist, not if it does.
 
 ![Fixed Bug](BugFix.png)
+## Part 2 - Reflection
+
+Something I learned in the second half if this quarter from lab that I didn't know before was how to build an autograder. I took CSE 11 in the summer and
+thats when I was first exposed to autograding and it was very interesting to me. I was curious about the processes behind it and how it worked. Even though it was
+a lot simpler, getting to build my own autograder with its own features in class was very fun and interesting to me!
