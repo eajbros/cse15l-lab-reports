@@ -37,7 +37,7 @@ Runs a ListExamples files methods (filter and merge), if the file exists and com
 ### Contents of TestListExamples.java:
 Has two methods that test each of the methods in ListExamples with JUnit.
 
-![Test List Examples](ListTester.png)
+![Test List Examples](ListExampleTester.png)
 ### Input Repository:
 All that is needed in the repository structure is the ListExamples.java file with implamentation of the filter and merge methods. Contents of ListExamples:
 
@@ -48,4 +48,4 @@ All that is needed in the repository structure is the ListExamples.java file wit
 ### Bug Fixed:
 Adding an `!` at the if statement makes sure that the program only exits if the file does not exist, not if it does.
 
-![Fixed Bug](FixedBug.png)
+![Fixed Bug](BugFix.png)
