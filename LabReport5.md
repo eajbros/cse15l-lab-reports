@@ -38,3 +38,7 @@ Runs a ListExamples files methods (filter and merge), if the file exists and com
 Has two methods that test each of the methods in ListExamples with JUnit.
 
 ![Test List Examples](ListTester.png)
+### Input Repository:
+All that is needed in the repository structure is the ListExamples.java file with implamentation of the filter and merge methods.
+
+![List Example](ListExample.java)
